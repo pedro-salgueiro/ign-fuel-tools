@@ -49,7 +49,7 @@ target_link_libraries(${PROJECT_LIBRARY_TARGET_NAME}
     ignition-msgs${IGN_MSGS_MAJOR_VER}::ignition-msgs${IGN_MSGS_MAJOR_VER}
     curl::curl
     ${JSONCPP_TARGET}
-    TINYXML2::TINYXML2
+    tinyxml2::tinyxml2
     ${YAML_TARGET}
     ZIP::ZIP
 )
@@ -65,7 +65,7 @@ ign_build_tests(TYPE UNIT
                 SOURCES ${gtest_sources}
                 LIB_DEPS
                   ignition-common${IGN_COMMON_MAJOR_VER}::ignition-common${IGN_COMMON_MAJOR_VER}
-                  TINYXML2::TINYXML2
+                  tinyxml2::tinyxml2
 )
 
 # Command line support.

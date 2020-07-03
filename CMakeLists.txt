@@ -26,32 +26,32 @@ ign_configure_project()
 
 #--------------------------------------
 # Find Tinyxml2
-ign_find_package(TINYXML2 REQUIRED PRIVATE PRETTY tinyxml2)
+ign_find_package(TINYXML2 REQUIRED PRIVATE PRETTY tinyxml2 PKGCONFIG TINYXML2)
 
 #--------------------------------------
 # Find libcurl
-ign_find_package(IgnCURL REQUIRED PRIVATE)
+ign_find_package(IgnCURL REQUIRED PRIVATE PKGCONFIG IgnCURL)
 
 #--------------------------------------
 # Find jsoncpp
-ign_find_package(JSONCPP REQUIRED PRIVATE)
+ign_find_package(JSONCPP REQUIRED PRIVATE PKGCONFIG JSONCPP)
 
 #--------------------------------------
 # Find libyaml
-ign_find_package(YAML REQUIRED PRIVATE)
+ign_find_package(YAML REQUIRED PRIVATE PKGCONFIG YAML)
 
 #--------------------------------------
 # Find libzip
-ign_find_package(ZIP REQUIRED PRIVATE)
+ign_find_package(ZIP REQUIRED PRIVATE PKGCONFIG ZIP)
 
 #--------------------------------------
 # Find ignition-common
-ign_find_package(ignition-common3 REQUIRED PRIVATE)
+ign_find_package(ignition-common3 REQUIRED PRIVATE PKGCONFIG ignition-common3)
 set(IGN_COMMON_MAJOR_VER ${ignition-common3_VERSION_MAJOR})
 
 #--------------------------------------
 # Find ignition-msgs
-ign_find_package(ignition-msgs5 REQUIRED PRIVATE)
+ign_find_package(ignition-msgs5 REQUIRED PRIVATE PKGCONFIG ignition-msgs5)
 set(IGN_MSGS_MAJOR_VER ${ignition-msgs5_VERSION_MAJOR})
 
 #--------------------------------------
